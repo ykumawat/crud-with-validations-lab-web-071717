@@ -1,0 +1,9 @@
+<%= make_header @song.title %>
+
+<h2><%= @song.released %></h2>
+<%= @song.release_year %>
+<%= @song.artist_name %>
+<%= @song.genre %>
+
+<%= make_link 'Edit', edit_song_path(@song) %>
+<%= link_to("Delete", song_path(@song), method: 'DELETE') %>
